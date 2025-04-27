@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTrack - Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="Hospitalicon.jpg" alt="Hospital Logo" class="brand-logo">
+            <h2>MediTrack</h2>
+        </div>
+        <div class="theme-toggle">
+            <button id="toggle-theme">Dark Mode</button>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="showSection('dashboard')">🏠 Dashboard</li>
+                <li onclick="showSection('patients')">👨‍⚕️ Patients</li>
+                <li onclick="showSection('doctors')">🩺 Doctors</li>
+                <li onclick="showSection('appointments')">📅 Appointments</li>
+                <li onclick="showSection('records')">📁 Medical Records</li>
+                <li onclick="showSection('departments')">🏥 Departments</li>
+                <li onclick="showSection('billing')">💳 Billing</li>
+                <li onclick="showSection('messages')">💬 Messages</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Image / Banner -->
+        <div class="hero-banner">
+            <img src="Hospitalicon2.jpg" alt="Hospital Image">
+        </div>
+
+        <!-- Sections -->
+        <section id="dashboard" class="section active">
+            <h1>Dashboard Overview</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Patients</h3>
+                    <p>120</p>
+                </div>
+                <div class="card">
+                    <h3>Doctors</h3>
+                    <p>25</p>
+                </div>
+                <div class="card">
+                    <h3>Appointments Today</h3>
+                    <p>45</p>
+                </div>
+            </div>
+        </section>
+    
+
+        <section id="patients" class="section">
+            <div class="section-header">
+                <h1>Patients</h1>
+                <button>Add Patient</button>
+            </div>
+            <div class="image-placeholder">
+                <img src="Patient.JPG" alt="Patient Image">
+            </div>
+        </section>
+
+        <section id="doctors" class="section">
+            <div class="section-header">
+                <h1>Doctors</h1>
+                <button>Add Doctor</button>
+            </div>
+            <div class="image-placeholder">
+                <img src="Doctor.JPG" alt="Doctor Image">
+            </div>
+        </section>
+
+        <section id="appointments" class="section">
+            <div class="section-header">
+                <h1>Appointments</h1>
+                <button>Schedule Appointment</button>
+            </div>
+        </section>
+
+        <section id="records" class="section">
+            <div class="section-header">
+                <h1>Medical Records</h1>
+                <button>Upload Record</button>
+            </div>
+        </section>
+
+        <section id="departments" class="section">
+            <div class="section-header">
+                <h1>Departments</h1>
+                <button>Add Department</button>
+            </div>
+        </section>
+
+        <section id="billing" class="section">
+            <div class="section-header">
+                <h1>Billing</h1>
+                <button>Generate Bill</button>
+            </div>
+        </section>
+
+        <section id="messages" class="section">
+            <div class="section-header">
+                <h1>Messages</h1>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
